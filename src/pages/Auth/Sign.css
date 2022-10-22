@@ -1,0 +1,116 @@
+.login {
+	width: 100%;
+	/* min-height: 100vh; */
+	/* padding: 0 20px; */
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	display: flex;
+}
+.loginContainer {
+	padding: 0px 30px;
+	margin: 0 auto;
+	width: 100%;
+	max-width: 360px;
+	min-height: 500px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	background: rgba(255, 255, 255, 1);
+	border-radius: 20px;
+	position: relative;
+}
+.mainLabel {
+	align-self: center;
+	color: #191919;
+	font-family: 'Merienda';
+	margin: 14px 0;
+	display: block;
+	font-size: 30px;
+	line-height: 1;
+}
+.authLabel {
+	color: #425277;
+	font-family: 'Merienda';
+	margin: 14px 0;
+	display: block;
+	font-size: 22px;
+	line-height: 1;
+	text-align: left;
+}
+.authInput {
+	width: 100%;
+	border: none;
+	border-bottom: 1px solid rgba(129, 129, 129, 0.51);
+	outline: none;
+	font-size: 24px;
+	color: #000;
+	font-weight: 900;
+	letter-spacing: 1px;
+	transition: 0.5s;
+}
+
+.authInput:invalid {
+	border-color: green;
+}
+.authInput:invalid {
+	border-color: red;
+}
+.authInput:focus {
+	border-bottom: 1px solid rgba(250, 203, 10, 0.9);
+}
+.btnContainer {
+	width: 100%;
+	padding: 24px 0;
+}
+.authButton {
+	border: none;
+	border-radius: 10px;
+	outline: none;
+	width: 100%;
+	padding: 10px 0;
+	color: #000;
+	font-size: 15px;
+	font-weight: bold;
+	letter-spacing: 1px;
+	background: #facb0a;
+	cursor: pointer;
+	transition: 0.3s;
+}
+.authButton:hover {
+	background: rgb(243, 190, 16);
+}
+.authP {
+	margin: 14px 0 0 0;
+	text-align: center;
+	color: #333;
+	cursor: pointer;
+	font-size: 14px;
+}
+.authSpan {
+	color: #ffcc00;
+	font-weight: 600;
+	letter-spacing: 0.5px;
+	margin-left: 5px;
+	cursor: pointer;
+	transition: all 200ms ease-in-out;
+}
+.authSpan:hover {
+	color: rgb(238, 46, 46);
+}
+.errorMsg {
+	color: rgb(238, 46, 46);
+	font-size: 16px;
+}
+
+@media screen and (max-width: 420px) {
+	.authLabel {
+		font-size: 16px;
+	}
+	.authInput {
+		font-size: 18px;
+	}
+	.authP {
+		font-size: 12px;
+	}
+}
